@@ -1,0 +1,36 @@
+$soft-blue: hsl(231, 69%, 60%);
+$soft-red: hsl(0, 94%, 66%);
+$grayish-blue: hsl(229, 8%, 60%);
+$very-dark-blue: hsl(229, 31%, 21%);
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@mixin transition-ease-navbar() {
+	transition: all 0.8s ease-in-out;
+}
+
+@mixin transition-ease {
+	transition: all 0.15s ease-in-out;
+}
+
+@mixin media-md {
+	@media only screen and (min-width: 769px) {
+		@content;
+	}
+}
+
+@mixin media-lg {
+	@media only screen and (min-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin media-xl {
+	@media only screen and (min-width: 1280px) {
+		@content;
+	}
+}
