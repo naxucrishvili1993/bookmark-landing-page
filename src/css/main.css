@@ -34,11 +34,11 @@ nav .navbar {
 }
 nav .navbar-logo {
   margin-right: auto;
-  margin-left: 30px;
+  margin-left: 15px;
 }
 nav .navbar-burger,
 nav .navbar-list-expanded {
-  margin-right: 30px;
+  margin-right: 15px;
 }
 nav img {
   cursor: pointer;
@@ -143,7 +143,7 @@ nav .navbar-list-expanded {
     gap: 20px;
   }
   nav .navbar-list-expanded .navbar-list-item a,
-nav .navbar-list-expanded .navbar-list-item button {
+  nav .navbar-list-expanded .navbar-list-item button {
     transition: all 0.15s ease-in-out;
   }
   nav .navbar-list-expanded .navbar-list-item:hover a {
@@ -453,18 +453,6 @@ nav .navbar-list-expanded .navbar-list-item button {
   margin-top: 0.5rem;
   transition: opacity 200ms, display 200ms;
 }
-@-webkit-keyframes slidein {
-  from {
-    display: block;
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 @keyframes slidein {
   from {
     display: block;
@@ -482,8 +470,7 @@ nav .navbar-list-expanded .navbar-list-item button {
 }
 #questions .questions-list ul .questions-list-question.active .questions-list-question-answer {
   display: block;
-  -webkit-animation: slidein 500ms;
-          animation: slidein 500ms;
+  animation: slidein 500ms;
 }
 #questions button {
   background-color: hsl(231deg, 69%, 60%);
@@ -530,9 +517,6 @@ nav .navbar-list-expanded .navbar-list-item button {
 #contact .input-div input::-moz-placeholder {
   font-family: "Rubik", sans-serif;
 }
-#contact .input-div input:-ms-input-placeholder {
-  font-family: "Rubik", sans-serif;
-}
 #contact .input-div input::placeholder {
   font-family: "Rubik", sans-serif;
 }
@@ -559,7 +543,7 @@ nav .navbar-list-expanded .navbar-list-item button {
     justify-content: center;
   }
   #contact .input-div input,
-#contact .input-div button {
+  #contact .input-div button {
     margin: 0;
   }
   #contact .input-div button {
@@ -600,7 +584,7 @@ footer div:nth-of-type(2) {
     justify-content: space-around;
   }
   footer div,
-footer ul {
+  footer ul {
     display: flex;
   }
   footer div:nth-of-type(1) {
